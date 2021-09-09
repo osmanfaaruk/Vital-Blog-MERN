@@ -1,0 +1,32 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%button{
+    color:$white;
+    background-color:#353b48;
+    border-radius: 4px;
+    padding: 15px 18px 30px 15px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    font-size: 1.5rem;
+    box-shadow: 0 0 4px #999;
+    width: 100%;
+    text-transform: uppercase;
+    user-select: none;
+    transition: background 0.8s;
+}
+%smallButton{
+    color:$white;
+    background-color:#353b48;
+    border-radius: 4px;
+    padding: 15px 18px 30px 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 4px #999;
+    text-transform: uppercase;
+    user-select: none;
+    transition: background 0.8s;
+}

@@ -1,0 +1,127 @@
+// upper navbar
+.top__banner-text {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  user-select: none;
+}
+@include responsive(tablet) {
+  .for-hidden {
+    display: none;
+  }
+}
+@include responsive(mobile) {
+  .for-hidden {
+    display: none;
+  }
+}
+
+// middle navbar
+.middle-header {
+  margin-top: 25px;
+}
+
+.header__name {
+  text-align: center;
+  user-select: none;
+  & h1 {
+    font-family: $headline1;
+    font-weight: 500;
+    font-size: 60px;
+    color: #222222;
+    text-transform: uppercase;
+
+    @include responsive(desktop) {
+      font-size: 45px;
+    }
+    @include responsive(laptop) {
+      font-size: 40px;
+    }
+    @include responsive(tablet) {
+      font-size: 35px;
+    }
+    @include responsive(mobile) {
+      font-size: 30px;
+    }
+  }
+  & h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+.header__icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  @include responsive(desktop) {
+  }
+  @include responsive(laptop) {
+  }
+  @include responsive(tablet) {
+    display: none;
+  }
+  @include responsive(mobile) {
+    display: none;
+  }
+
+  & Link {
+    background-color: black;
+  }
+}
+
+// lower__navbar
+.lower {
+  user-select: none;
+}
+.lower__navbar {
+  border-top: 0.5px solid gray !important;
+  margin-top: 18px;
+  user-select: none;
+  &-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black !important;
+    text-decoration: none;
+    @include responsive(tablet) {
+      font-size: 13px;
+    }
+    @include responsive(mobile) {
+      font-size: 13px;
+    }
+  }
+  &-button {
+    font-size: 15px;
+  }
+  & Form {
+    margin-left: 50px;
+    @include responsive(tablet) {
+      margin-top: 5px;
+      margin-left: 0px;
+    }
+    @include responsive(mobile) {
+      margin-left: 0px;
+      margin-top: 5px;
+    }
+  }
+}
+.newsFeed {
+  margin-left: 10px;
+  @include responsive(laptop) {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  @include responsive(tablet) {
+    margin-top: 20px;
+
+    margin-left: 0px;
+  }
+  @include responsive(mobile) {
+    margin-top: 20px;
+
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,53 @@
+.account {
+    @extend %flex-center;
+    text-align: center;
+    user-select: none;
+  &__section {
+    margin-top:55px;
+    width: 35%;
+    @include responsive(laptop) {
+      width: 40%;
+    }
+    @include responsive(tablet) {
+      width: 45%;
+    }
+    @include responsive(mobile) {
+      width: 50%;
+    }
+    & h1 {
+      margin-bottom: 4rem;
+      font-size: 2.3rem;
+      letter-spacing: 0.5px;
+      @include responsive(laptop) {
+        font-size: 2.2rem;
+      }
+      @include responsive(tablet) {
+        font-size: 2rem;
+      }
+      @include responsive(mobile) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  & h4{
+      margin-top: 30px;
+      user-select: none;
+      
+
+  }
+}
+
+.loginRegisterBtn {
+  @extend %button;
+  &:hover {
+    background: $RegisterButtonBackground
+      radial-gradient(circle, transparent 1%, $RegisterButtonBackground 1%)
+      center/15000%;
+    color: white;
+  }
+  &:active {
+    background-color: #292d3e;
+    background-size: 100%;
+    transition: background 1s;
+  }
+}

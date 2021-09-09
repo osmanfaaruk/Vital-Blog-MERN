@@ -1,0 +1,20 @@
+// Import abstracts
+@import './abstracts/variable';
+@import './abstracts/mixin';
+@import './abstracts/extends';
+
+// base
+@import './base/reset';
+@import './base/bootstrap';
+
+// import layout 
+
+
+// utils
+@import './utils/utils.scss';
+
+// import components
+@import './components/notfound';
+@import './components/navbar';
+@import './components/register&login';
+@import './components/createPost.scss';
