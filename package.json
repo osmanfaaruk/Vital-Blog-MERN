@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "start":"node server.js",
+    "frontend": "npm start --prefix frontend",
+    "clientInstall": "npm install --prefix frontend",
+    "build":"npm run build --prefix frontend",
+    "dev": "concurrently \" npm run server  \" \" npm run frontend \""
+  },
+  "keywords": [],
+  "author": "Osman",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "formidable": "^1.2.2",
+    "html-to-text": "^8.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.12",
+    "uuid": "^8.3.2"
+  }
+}

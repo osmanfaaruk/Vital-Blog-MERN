@@ -1,0 +1,62 @@
+.sidebar {
+  margin-top: 8rem;
+  font-family: $headline2;
+  user-select: none;
+  &__setting {
+    & h1 {
+      font-weight: 600;
+    }
+    &-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+  }
+  &__sidebar-footer {
+    margin-top: 7rem;
+    @extend %headlineBorderTop;
+  }
+ 
+  @include responsive(mobile) {
+    display: none;
+  }
+}
+.links {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: #7575a1;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.sidebar-footer {
+  text-decoration: none;
+  color: #7575a1;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+.profile {
+  margin-top: 8rem;
+  user-select: none;
+  & h1 {
+    @extend %headlineBorderBottom;
+  }
+  &__name {
+    margin-top: 5rem;
+    &-Input {
+      margin-top:1.5rem;
+      font-size: 1.5rem;
+      outline: none;
+      border: none;
+      width:93%;
+    }
+    &-text{
+      font-size: 16px;
+      font-weight: 400;
+      color: #3D3D3D;
+      margin-top:1rem;
+    }
+  }
+}
+.borderBottom{
+  @extend %headlineBorderBottom;
+}

@@ -1,0 +1,74 @@
+.blogCard {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 2.2rem;
+  @extend %headlineBorderTop;
+  &-img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    object-fit: cover;
+  }
+  &-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: $headline1;
+    margin-top: 1rem;
+    &-link {
+      color: rgb(17, 17, 17);
+      text-decoration: none;
+    }
+  }
+  &-author {
+    font-size: 13px;
+    font-family: 400;
+    font-style: italic;
+    color: #4a2400;
+    margin-top: 1rem;
+  }
+  &-shortDes {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 2.5rem;
+  }
+}
+.homeRightBar {
+  top: 0;
+  margin-left: 5rem;
+  position: sticky;
+
+ 
+}
+.homeRightBarCard {
+  margin-top: 2.3rem;
+  user-select: none;
+  @include responsive(tablet) {
+    display: none;
+  }
+  @include responsive(mobile) {
+    display: none;
+  }
+  &-card {
+    outline: none;
+    border: none;
+    border-radius: none;
+    margin-top: 1.2rem;
+    & h1 {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $headline2;
+    }
+  }
+  &-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+  }
+  &-text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #757575;
+  }
+}
