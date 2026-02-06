@@ -18,7 +18,7 @@ const changeUserName = async (req, res) => {
         { name: name },
         { new: true }
       );
-      const token = jwt.sign({ user }, process.env.SECRET, {
+      const token = jwt.sign({ user }, process.env.JWT_SECRET, {
         expiresIn: "7d",
       });
       return res.status(200).json({ token, msg: "Your name has been updated" });
