@@ -35,7 +35,7 @@ const HomeAllPosts = () => {
                       <Card.Img
                         className="blogCard-img img-fluid rounded-start"
                         variant="top"
-                        src={`/images/${post.image}`}
+                        src={`${process.env.REACT_APP_API_URL}/images/${post.image}`}
                       />
                     </div>
                   </Col>

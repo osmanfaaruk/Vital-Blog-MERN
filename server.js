@@ -18,6 +18,7 @@ app.use(cors({
     credentials: true
 }));
 app.use(bodyParser.json());
+app.use('/images', express.static(path.join(__dirname, 'frontend', 'build', 'images')));
 
 // // Routes
 // app.get("/", (req, res) => {

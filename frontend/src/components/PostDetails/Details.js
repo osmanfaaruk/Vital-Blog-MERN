@@ -47,7 +47,7 @@ const Details = () => {
               <div className="postDetails">
                 <h1 className="postDetails-title">{postDetails.title}</h1>
                 <img
-                  src={`/images/${postDetails.image}`}
+                  src={`${process.env.REACT_APP_API_URL}/images/${postDetails.image}`}
                   alt=""
                   className="postDetails-img"
                 />
