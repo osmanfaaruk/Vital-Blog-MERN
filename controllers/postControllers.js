@@ -3,11 +3,15 @@ const { v4: uuidv4 } = require("uuid");
 const postSchema = require("../models/Post");
 const { body, validationResult } = require("express-validator");
 const fs = require("fs");
+const path = require("path");
 const { htmlToText } = require("html-to-text");
 
 const createPost = (req, res) => {
   const form = formidable({ multiples: true });
   form.parse(req, async (error, fields, files) => {
+    if (error) {
+      return res.status(500).json({ errors: [{msg: "Error parsing form data"}] });
+    }
     const { title, description, category, body, slug, id, name } = fields;
     const errors = [];
     if (title === "") {
