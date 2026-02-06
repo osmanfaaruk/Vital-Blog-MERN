@@ -107,11 +107,6 @@ REACT_APP_API_URL=http://localhost:4000
 
 ---
 
-## 🛡️ License
-Distributed under the **ISC License**. See `LICENSE` for more information.
-
----
-
 ## 🤝 Developed By
 **Osman Faruk**  
 [GitHub](https://github.com/osmanfaaruk) • [Portfolio](https://osman-faruk.web.app/)
