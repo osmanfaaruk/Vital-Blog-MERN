@@ -114,4 +114,4 @@ Distributed under the **ISC License**. See `LICENSE` for more information.
 
 ## 🤝 Developed By
 **Osman Faruk**  
-[GitHub](https://github.com/osmanfaaruk) • [Portfolio](https://osmanfaaruk.com)
+[GitHub](https://github.com/osmanfaaruk) • [Portfolio](https://osman-faruk.web.app/)
