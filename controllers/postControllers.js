@@ -44,8 +44,15 @@ const createPost = (req, res) => {
     if (errors.length !== 0) {
       return res.status(400).json({ errors, files });
     } else {
-      const newPath =
-        __dirname + `/../frontend/build/images/${files.image.name}`;
+      const imagesDir = path.join(__dirname, '..', 'frontend', 'build', 'images');
+      
+      // Ensure directory exists
+      if (!fs.existsSync(imagesDir)) {
+        fs.mkdirSync(imagesDir, { recursive: true });
+      }
+
+      const newPath = path.join(imagesDir, files.image.name);
+      
       fs.copyFile(files.image.path, newPath, async (error) => {
         if (!error) {
           try {
@@ -66,6 +73,8 @@ const createPost = (req, res) => {
           } catch (error) {
             return res.status(500).json({ errors: error, msg: error.message });
           }
+        } else {
+          return res.status(500).json({ errors: [{msg: "Failed to upload image. Please try again."}], detail: error.message });
         }
       });
     }
