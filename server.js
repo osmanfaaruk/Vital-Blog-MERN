@@ -13,7 +13,10 @@ const app = express();
 require('dotenv').config();
 dbConnect();
 
-app.use(cors());
+app.use(cors({
+    origin: true, // This will allow your Vercel URL
+    credentials: true
+}));
 app.use(bodyParser.json());
 
 // // Routes
