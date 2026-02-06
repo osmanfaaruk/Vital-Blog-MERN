@@ -13,7 +13,7 @@
     "clientInstall": "npm install --prefix frontend",
     "build": "npm run build --prefix frontend",
     "dev": "concurrently \" npm run server  \" \" npm run frontend \"",
-    "render-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "render-postbuild": "npm install --prefix frontend --legacy-peer-deps && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "Osman",
