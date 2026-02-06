@@ -10,7 +10,12 @@ export default defineConfig({
     },
   },
   define: {
-    'process.env': {},
+    'process.env.REACT_APP_API_URL': JSON.stringify(process.env.REACT_APP_API_URL),
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
+    'process.env': {
+        REACT_APP_API_URL: process.env.REACT_APP_API_URL,
+        NODE_ENV: process.env.NODE_ENV || 'production'
+    },
   },
   esbuild: {
     loader: 'jsx',
